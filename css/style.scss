@@ -2,9 +2,43 @@ $dark-cyan: hsl(185, 75%, 39%);
 $dark-blue: hsl(229, 23%, 23%);
 $dark-gray: hsl(227, 10%, 46%);
 $gris-oscuro: hsl(0, 0%, 59%);
+$blanco: white;
 $fuente: 'Kumbh Sans',
 'sans-serif';
 body {
-    background-color: $dark-cyan;
+    // background-color: $dark-cyan;
+    background-color: $gris-oscuro;
     font-family: $fuente;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = 10 px*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    &-article {
+        border-radius: 10px;
+        overflow: hidden;
+        width: 330px;
+        &-img {
+            width: 100%;
+            display: block;
+        }
+        &-div {
+            background-color: $blanco;
+            height: 200px;
+        }
+    }
 }

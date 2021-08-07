@@ -4,8 +4,9 @@
  **/
 
 import confetti from 'canvas-confetti';
+import normarlize from 'normalize.css';
 
 confetti.create(document.getElementById('canvas'), {
-  resize: true,
-  useWorker: true,
+    resize: true,
+    useWorker: true,
 })({ particleCount: 200, spread: 200 });
