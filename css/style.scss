@@ -1,13 +1,13 @@
 $dark-cyan: hsl(185, 75%, 39%);
 $dark-blue: hsl(229, 23%, 23%);
 $dark-gray: hsl(227, 10%, 46%);
-$gris-oscuro: hsl(0, 0%, 59%);
+$gris-claro: hsl(0, 0%, 59%);
 $blanco: white;
 $fuente: 'Kumbh Sans',
 'sans-serif';
 body {
-    // background-color: $dark-cyan;
-    background-color: $gris-oscuro;
+    background-color: $dark-cyan;
+    //background-color: $gris-oscuro;
     font-family: $fuente;
 }
 
@@ -28,17 +28,64 @@ html {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
     &-article {
-        border-radius: 10px;
+        background-color: $blanco;
+        height: 250px;
+        border-radius: 20px;
         overflow: hidden;
-        width: 330px;
+        width: 324px;
+        height: 360px;
+        font-size: 1.1rem;
         &-img {
             width: 100%;
             display: block;
+            height: 130px;
         }
         &-div {
-            background-color: $blanco;
-            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 1px solid $gris-claro;
+            &-h1 {
+                font-weight: 700;
+                margin-top: 2rem;
+                span {
+                    font-weight: 400;
+                    color: $dark-gray;
+                }
+            }
+            &-h2 {
+                font-weight: 400;
+                color: $dark-gray;
+            }
+            &-img {
+                margin-top: -53px;
+                border-radius: 50px;
+                border: $blanco solid 3px;
+                background-color: $blanco;
+            }
+        }
+        &-footer {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            padding-bottom: 0px;
+            &-1 {
+                font-size: 1.6rem;
+                padding-top: 1rem;
+                h3 {
+                    margin-bottom: 0px;
+                }
+            }
+            span {
+                font-size: 1.3rem;
+                font-weight: 400;
+                margin-top: -16px;
+            }
         }
     }
 }
