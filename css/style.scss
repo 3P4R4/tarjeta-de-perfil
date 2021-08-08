@@ -1,7 +1,7 @@
 $dark-cyan: hsl(185, 75%, 39%);
 $dark-blue: hsl(229, 23%, 23%);
 $dark-gray: hsl(227, 10%, 46%);
-$gris-claro: hsl(0, 0%, 59%);
+$gris-claro: hsl(0, 0%, 83%);
 $blanco: white;
 $fuente: 'Kumbh Sans',
 'sans-serif';
@@ -82,8 +82,9 @@ html {
                 }
             }
             span {
-                font-size: 1.3rem;
-                font-weight: 400;
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: $dark-gray;
                 margin-top: -16px;
             }
         }
