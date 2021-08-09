@@ -8,6 +8,8 @@ Solo debes iniciar en la terminal el comando *npm init* para que se instalen las
 
 ### npm run build
 
+Si deseas compilar este proyecto debes ejecutar el comando *npm run build*
+
 ---
 
 ## Descripción General
