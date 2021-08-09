@@ -1,24 +1,72 @@
-# New Project
+# Proyecto Tarjeta de Perfil
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+## Para Iniciar este proyecto
+Necesitas tener instalado NPM y NodeJs
 
-## Available Scripts
+Solo debes iniciar en la terminal el comando *npm init* para que se instalen las dependencias y luego *npm start* para iniciar el servidor local en tu navegador.
 
-### npm start
-
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
-
-The page will reload if you make edits.
-You will also see any lint errors in the console.
 
 ### npm run build
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+---
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.mjs` config file.
+## Descripción General
+POC de codigo practico proporcionado por ***frontEndMendtor***
 
-### Q: What about Eject?
+## Desafio
+No hubo mucho desafio pues fue una practica para novatos
 
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+  - [Captura-de-pantalla] *(#captura-de-pantalla)*
+## Imagen del proyecto final
+![CAptura de pantalla de la tarjeta de perfil](/images/capturaPantalla.png)
+
+## WEB
+[Netlify](https://desfio-1-forntendmentor.netlify.app/)
+
+## Construido con
+Utilice el snowpack como herramienta alternativa a webpack que realmente es mas rapida al momento de cargar nuestro servidor local, de verdad que me gusta mucho.
+
+## Aprendizaje
+Aprendi mucho utilizando Sass y flexbox, tambien a modificar las rutas dentro de **snowpack**  lo cual me tomo un quebradero de cabeza pues no reconocia las rutas donde se encontraban las imagenes y la carpeta de estilos.
+
+Por lo menos en el caso de ***snowpack** para hacer que la herramienta reconozca las rutas de las carpetas es tan facil como modifica el archivo **snowpack.config.mjs** algo parecido tal cual con **(webpack)**, aqui dejo el codigo que he agregado...
+```javascript
+mount: {
+        public: { url: '/', static: true },
+        images: { url: '/images', static: true },
+        css: { url: '/css', static: true },
+        src: { url: '/dist' },
+```
+Donde la carpeta **css** y **images** son las que me dieron problemas.
+
+## CI/CD
+Todo la Integración continua y el despliegue continuo fue gracias a **github** y **netlify**
+
+### Construido con
+
+- Marcado semántico HTML5
+- Sass
+- Flex
+
+### Que aprendí
+
+Aprendi que la practica hace al maestro, la constancia cada dia nos hace buenos y por muy poco que sea el reto, todo prueba es bienvenida.
+
+### Desarrollo continuo
+
+Espero pronto montar todos los siguientes proyectos en React como todo buen autodidacta.
+
+### Recursos útiles
+
+Metodologia BEM y sintaxis Sass
+
+## Agradecimientos
+
+Agradecimiento a frontendmentor y el canal de [Bluuweb](https://bluuweb.github.io/) quien me ayudo mucho a dilucidar cirtas dudas que tenia en un comienzo
+
+## Autor
+Lenin Mendoza
+
+## Agradecimiento
+Agradecimiento a frontendmentor y @bluuweb
+
